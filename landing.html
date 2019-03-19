@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Athletify Ltd.</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <!-- video background -->
+
+    <div class="background-wrap">
+      <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="video.mp4" type="video/mp4">
+        Video not supported
+      </video>
+    </div>
+
+    <!-- clock -->
+
+      <div class="clock-content">
+        <div class="widget clock" id="hongkong" data-timezone="+9">
+          <div class="hand seconds"></div>
+          <div class="hand minutes"></div>
+          <div class="hand hours"></div>
+          <div class="hand-cap"></div>
+        </div>
+      </div>
+    <!-- content -->
+
+    <div class="content" id="one">
+
+      <div class="top-content">
+      <img class="logo" src="images/logo.png"></img>
+      <p class="tagline">Lapz Training Never Stops</p></div>
+
+      <div id="two" class="mid-content">
+        <h2 style="padding-bottom: 30px">ABOUT ATHLETIFY</h2>
+        <p style="font-style: italic; margin: 0 8%;">In Hong Kong, thousands of athletes possess a special talent. <br style="margin-bottom: 10px;" />However this abundance in talent is far disappointed by the lack of opportunity. <br />We're here to provide a balance.</p>
+        <div style=" margin: 0% 14%;height: 20%;display: flex;flex-direction: column;justify-content: space-between;">
+          <h3>Athletify is a professional basketball development agency. Our programmes strive to bring out the best in athletes, nurturing not only their capabilities and opportunities on-the-court but also off-the-court - a vital objective at Athletify. Working closely with our partners in the US, we foster a bridge between local and international opportunities so that our athletes have the chance to become the best by learning and training with the best.</h3>
+        </div>
+      </div>
+
+      <div id="three" class="bottom-content">
+            <!-- Contact Form -->
+        <form action="https://formspree.io/viren@mgglobe.com" method="POST" class="contact2-form validate-form">
+          <span class="contact2-form-title">
+            START TRAINING TODAY
+          </span>
+
+          <div class="wrap-input2 validate-input" data-validate="Name is required">
+            <input class="input2" type="text" name="name">
+            <span class="focus-input2" data-placeholder="NAME"></span>
+          </div>
+
+          <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+            <input class="input2" type="text" name="email">
+            <span class="focus-input2" data-placeholder="EMAIL"></span>
+          </div>
+
+          <div class="wrap-input2 validate-input" data-validate = "Message is required">
+            <textarea class="input2" name="message"></textarea>
+            <span class="focus-input2" data-placeholder="MESSAGE"></span>
+          </div>
+
+          <div class="container-contact2-form-btn">
+            <div class="wrap-contact2-form-btn">
+              <div class="contact2-form-bgbtn"></div>
+              <button class="contact2-form-btn">
+                SEND
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+<!--       <div style="display: flex; justify-content: center;">
+ -->      <p class="copyright">© 2019 Athletify Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <!-- Nav Bar -->
+<!--     <div style="display: flex; justify-content: flex-end;">
+      <div class="navbar">
+        <a href="#one">Athletify</a>
+        <a href="#two">About</a>
+        <a href="#three">Contact Us</a>
+      </div>
+    </div> -->
+
+    <div style="display: flex; justify-content: flex-end; width: 97%">
+      <div class="dropdown show">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ATHLETIFY
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="left: 20px;">
+          <a style="font-size: 18px;" href="#one">TOP</a>
+          <a style="font-size: 18px;" href="#two">ABOUT</a>
+          <a style="font-size: 18px;" href="#three">CONTACT US</a>
+          <a style="font-size: 18px; color: #fff;">--------------------</a>
+          <a style="font-size: 18px;" href="#three">THE TEAM</a>
+          <a style="font-size: 18px;" href="#three">OUR SERVICES</a>
+          <a style="font-size: 18px;" href="#three">GALLERY</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- social panel -->
+
+    <div style="display: flex; justify-content: flex-end; height: 100%; margin-right: 3vw;">
+      <div class="social-panel">
+          <a href="https://www.facebook.com/athletify.life/" target="blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/athletify.life/" target="blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="mailto:info@athletify.life">
+          <i class="fa fa-at"></i>
+          </a>
+      </div>
+    </div>
+
+    <!-- page scroll buttons -->
+    <div style="display: flex; justify-content: center;">
+      <a href="#two" <i class="scroll-down">
+        <i class="fa fa-arrow-circle-down" style="font-size: 50px !important;"> </i>
+      </a>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+      <a href="#three" <i class="scroll-down" style="top: 190%;">
+        <i class="fa fa-arrow-circle-down" style="font-size: 50px !important;"> </i>
+      </a>
+    </div>
+    <!--     <div style='padding-top:90px;'/> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
