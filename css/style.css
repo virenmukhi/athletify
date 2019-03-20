@@ -5,7 +5,7 @@
 
       body {
         font-family: futura, sans-serif;
-        background-color: black;
+        background-color: #1d1919;
       }
 
       a{
@@ -73,7 +73,7 @@
       }
 
       .content h3 {
-        color: gold;
+        color: rgba(231,189,116,1);
         font-size: 18px;
         text-align: center;
         padding-top: 15%;
