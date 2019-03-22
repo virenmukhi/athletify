@@ -842,6 +842,26 @@ section.awSlider > img{
   opacity:.5;
 }
 
-.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-  height: 350px;
+  @media (min-width: 601px){
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+      height: 350px;
+    }
+  }
+
+  @media (max-width: 600px){
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+      width: 380px;
+    }
+  }
+
+  @media (max-width: 600px) {
+  .gallery-padding {
+    padding-top: 200px
+  }
+}
+
+  @media (min-width: 601px) {
+  .gallery-padding {
+    padding-top: 40px
+  }
 }
