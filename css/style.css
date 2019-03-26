@@ -27,6 +27,14 @@
           font-weight: 100;
           z-index: 10;
           color: rgba(255,255,255,0.9);
+          margin-top: 0 !important;
+        }
+
+        p{
+          color: white;
+          text-align: center;
+          font-weight:100; z-index: 10;
+          font-size: 16px;
         }
 
         br{
@@ -83,7 +91,8 @@
 
       .content h3 {
         color: rgba(241,199,116,1);
-        font-size: 19px;
+        /*color: #fff;*/
+        font-size: 16px;
         text-align: center;
         padding-top: 15%;
         line-height: 2;
@@ -91,8 +100,9 @@
 
       @media (min-width: 601px){
         .content h3{
-          font-size: 24px;
-          padding-top: 8%;
+          font-size: 18px;
+          padding-top: 7%;
+          font-style: italic;:
         }
       }
 
@@ -100,7 +110,7 @@
         color: white;
         text-align: center;
         font-weight:100; z-index: 10;
-        font-size: 18px;
+        font-size: 16px;
         }
 
       .logo {
@@ -168,6 +178,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         text-align: center;
         width: 100%;
         margin: 30px auto;
+        /*display: flex;*/
+      }
+
+        .contact-form {
+        position: absolute;
+        padding-top: 30px;
+        text-align: center;
+        width: 100%;
         display: flex;
       }
 
@@ -176,7 +194,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         .dropdown {
         z-index: 2;
         position: fixed;
-        top: 5%;
+        top: 3%;
+        /*padding: 2%;*/
+        z-index: 100;
         }
 
         @media (max-width: 600px) {
@@ -208,13 +228,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
           text-align: center;
           display: flex !important;
           flex-direction: column;
+          z-index: 100;
         }
 
         @media (min-width: 601px) {
           .dropdown-menu.show {
             padding-right: 24%;
             background-color: rgba(0, 0, 0, 0);
+            left: -0% !important;
+            text-align: right;
+          }
+        }
 
+        .dropdown-size {
+          font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+          .dropdown-size {
+            font-size: 20px;
+            padding: 3px
           }
         }
 
@@ -274,7 +307,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         position: absolute;
         left:0px;
         bottom:0px;
-        height:18px;
+        height:16px;
         width:100%;
         background: rgba(246,246,246,0.001);
         letter-spacing: 1px !important;
@@ -540,7 +573,7 @@ textarea.input2 + .focus-input2::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .wrap-contact2-form-btn {
@@ -844,7 +877,7 @@ section.awSlider > img{
 
   @media (min-width: 601px){
     .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-      height: 350px;
+      width: 600px;
     }
   }
 
@@ -865,3 +898,83 @@ section.awSlider > img{
     padding-top: 40px
   }
 }
+
+        /* meet the team card component*/
+
+        .card{
+          background-color: rgba(255, 255, 255, 0.1);
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: .1px .1px 10px rgba(241,199,116,1);
+          width: 70%;
+          display: inline-block;
+          text-align: left;
+          color: rgba(241,199,116,1);
+        }
+
+        .img-circle{
+          border-radius: 50%;
+          width: 280px;
+          height: 280px;
+          box-shadow: 1px 1px 10px aliceblue;
+          position: relative;
+          float: right;
+          margin-top: 4.5%;
+          margin-left: 2%;
+        }
+
+      .card h1 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #e4e4e4;
+        margin-bottom: 10px;
+        text-shadow: 0.5px 0.5px 5px #828282;
+      }
+
+      .card h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #e4e4e4;
+        margin-bottom: 0px;
+        letter-spacing: 0px;
+        text-align: left;
+        font-style: italic;
+      }
+
+      .card h3 {
+        color: rgba(241,199,116,1);
+        /*color: #fff;*/
+        font-size: 16px;
+        padding-top: 15%;
+        line-height: 2;
+      }
+
+      @media (min-width: 601px){
+        .card h3{
+          font-size: 18px;
+          padding-top: 1%;
+          font-style: italic;:
+        }
+      }
+
+      .card p {
+        color: white;
+        text-align: left;
+        font-weight:100; z-index: 10;
+        font-size: 16px;
+        }
+
+      .card h4 {
+        font-size: 14px;
+        text-align: left;
+        font-style: bold:
+        z-index: 10;
+        color: rgba(255,255,255,0.9);
+        margin-bottom: 0;
+      }
+
+      .card br {
+        line-height: 20px;
+      }

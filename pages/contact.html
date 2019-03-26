@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <link rel="icon" type="image/png" href="../images/icon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-
   </head>
 
 
   <body>
-
 
     <!-- logo -->
 
@@ -24,58 +21,44 @@
 
       <!-- heading -->
 
-        <h2>THE JOURNEY THUS FAR</h2>
+        <h2>START TRAINING TODAY</h2>
 
-        <!-- image slider -->
-        <div class='gallery-padding'/>
+      <div class="contact-form">
+        <form action="https://formspree.io/viren@mgglobe.com" method="POST" class="contact2-form validate-form">
+          <p style="font-style: italic; padding-bottom:50px;">Interested in training/collaborating with us? <br> Leave us your details so we can begin to discuss your vision and goals.</p>
 
-
-
-    <section class="awSlider">
-      <div  class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-<!--         <ol class="carousel-indicators">
-          <li data-target=".carousel" data-slide-to="0" class="active"></li>
-          <li data-target=".carousel" data-slide-to="1"></li>
-          <li data-target=".carousel" data-slide-to="2"></li>
-          <li data-target=".carousel" data-slide-to="3"></li>
-        </ol> -->
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="../images/whatwedo.png">
+          <div class="wrap-input2 validate-input" data-validate="Name is required">
+            <input class="input2" type="text" name="name">
+            <span class="focus-input2" data-placeholder="NAME"></span>
           </div>
-          <div class="item">
-            <img src="../images/360.jpg">
-          </div>
-          <div class="item">
-            <img src="../images/gscaa3.jpg">
-          </div>
-          <div class="item">
-            <img src="../images/sscca.jpg">
-          </div>
-        </div>
 
+          <div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+            <input class="input2" type="text" name="email">
+            <span class="focus-input2" data-placeholder="EMAIL"></span>
+          </div>
 
-          <!-- Controls -->
-          <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Geri</span>
-          </a>
-          <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">İleri</span>
-          </a>
-        </div>
-      </section>
+          <div class="wrap-input2 validate-input" data-validate = "Message is required">
+            <textarea class="input2" name="message"></textarea>
+            <span class="focus-input2" data-placeholder="MESSAGE"></span>
+          </div>
+
+          <div class="container-contact2-form-btn">
+            <div class="wrap-contact2-form-btn">
+              <div class="contact2-form-bgbtn"></div>
+              <button class="contact2-form-btn">
+                SEND
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
 
 
     <!-- dropdown nav -->
 
     <div style="display: flex; justify-content: flex-end; width: 97%">
       <div class="dropdown show">
-        <a class="dropdown-toggle" style="text-decoration: none;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ATHLETIFY
         </a>
 
@@ -112,10 +95,11 @@
       </div>
     </div>
 
-        <!-- footer -->
+    <!-- footer -->
     <div>
      <p class="copyright">© 2019 Athletify Ltd. All Rights Reserved.</p>
     </div>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -124,11 +108,6 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
-
-    <script src="../scripts/carousel.js"></script>
-
+    <script src="../scripts/script.js"></script>
   </body>
 </html>
