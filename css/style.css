@@ -1073,6 +1073,11 @@ section.awSlider > img{
         color: white;
       }
 
+      @media (max-width: 800px){
+        .service {
+          padding: 6px;
+        }
+      }
 
     .service h1 {
       font-size: 21px;
@@ -1083,6 +1088,12 @@ section.awSlider > img{
       text-shadow: 0.5px 0.5px 5px #828282;
       text-align: center;
     }
+
+      @media (max-width: 800px){
+        .service h1{
+          font-size: 15px;
+        }
+      }
 
     .service h2 {
       font-size: 18px;
@@ -1095,34 +1106,32 @@ section.awSlider > img{
       font-style: italic;
     }
 
-    .service h3 {
-      color: rgba(241,199,116,1);
-      /*color: #fff;*/
-      font-size: 16px;
-      padding-top: 15%;
-      line-height: 2;
-    }
-
-    @media (min-width: 601px){
-      .service h3{
-        font-size: 18px;
-        padding-top: 1%;
-        font-style: italic;:
-      }
-    }
-
     .service p {
       color: white;
       font-weight:100; z-index: 10;
       font-size: 16px;
       text-align: center;
       margin: 0;
+      overflow-wrap: break-word;
+      }
+
+      @media (max-width: 800px){
+        .service p{
+          font-size: 12px;
+        }
       }
 
       .service li {
       color: white;
       font-size: 16px;
       margin: 1px 20px;
+      overflow-wrap: break-word;
+      }
+
+      @media (max-width: 800px){
+        .service li{
+          font-size: 12px;
+        }
       }
 
       .service br {
@@ -1139,11 +1148,16 @@ section.awSlider > img{
       line-height: normal;
     }
 
+      @media (max-width: 800px){
+        .service h4{
+          font-size: 11px;
+        }
+      }
 
           .img-square{
           border-radius: 20px;
           width: 330px;
-          height: 220px;
+          height: 240px;
           box-shadow: .1px .1px 3px aliceblue;
           position: relative;
           margin-left: auto;
@@ -1152,15 +1166,13 @@ section.awSlider > img{
           overflow: hidden;
         }
 
-      @media (max-width: 600px){
+      @media (max-width: 1100px){
         .img-square{
         border-radius: 20px;
-        width: 130px;
-        height: 130px;
-        box-shadow: 1px 1px 10px aliceblue;
+        width: 110px;
+        height: 80px;
+        box-shadow: .1px .1px 3px aliceblue;
         position: relative;
-        float: right;
-        margin-top: 20px;
-        margin-left: 2%;
-      }
+        margin-top: 12px;
+     }
     }
