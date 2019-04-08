@@ -1121,6 +1121,16 @@ section.awSlider > img{
         }
       }
 
+    .service a {
+      font-size: 16px;
+      }
+
+      @media (max-width: 800px){
+        .service a{
+          font-size: 12px;
+        }
+      }
+
       .service li {
       color: white;
       font-size: 16px;
